@@ -131,7 +131,7 @@
 		AOS.init({
 			duration: 1200,
 			once: true,
-			
+			disable: 'mobile'
 		});
 
 		/* 10. CONTACT VALIDATION FORM
