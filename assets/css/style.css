@@ -554,13 +554,14 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    background: url(../img/particle-background.gif);
+    /*background: url(../img/particle-background.gif);*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #000;
     color: #fff !important;
+    height: 100vh;
 }
 
 #intro .overlay {

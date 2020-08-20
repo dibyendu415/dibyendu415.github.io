@@ -137,54 +137,54 @@
 		/* 10. CONTACT VALIDATION FORM
 		==================================================*/
 
-		$(function () {
-			$('#contact-form').validate({
-				rules: {
-					name: {
-						required: true,
-						minlength: 2
-					},
-					email: {
-						required: true
-					},
-					message: {
-						required: true
-					}
-				},
-				messages: {
-					name: {
-						required: "Please Input Your Name",
-						minlength: "your name must consist of at least 2 characters"
-					},
-					email: {
-						required: "Please Input Your Email"
-					},
-					message: {
-						required: "Your Message Required"
-					}
-				},
-				submitHandler: function (form) {
-					$(form).ajaxSubmit({
-						type: "POST",
-						data: $(form).serialize(),
-						url: "php/process.php",
-						success: function () {
-							$('#contact :input').attr('disabled', 'disabled');
-							$('#contact').fadeTo("slow", 1, function () {
-								$(this).find(':input').attr('disabled', 'disabled');
-								$(this).find('label').css('cursor', 'default');
-								$('#success').fadeIn();
-							});
-						},
-						error: function () {
-							$('#contact').fadeTo("slow", 1, function () {
-								$('#error').fadeIn();
-							});
-						}
-					});
-				}
-			});
-		});
+		// $(function () {
+		// 	$('#contact-form').validate({
+		// 		rules: {
+		// 			name: {
+		// 				required: true,
+		// 				minlength: 2
+		// 			},
+		// 			email: {
+		// 				required: true
+		// 			},
+		// 			message: {
+		// 				required: true
+		// 			}
+		// 		},
+		// 		messages: {
+		// 			name: {
+		// 				required: "Please Input Your Name",
+		// 				minlength: "your name must consist of at least 2 characters"
+		// 			},
+		// 			email: {
+		// 				required: "Please Input Your Email"
+		// 			},
+		// 			message: {
+		// 				required: "Your Message Required"
+		// 			}
+		// 		},
+		// 		submitHandler: function (form) {
+		// 			$(form).ajaxSubmit({
+		// 				type: "POST",
+		// 				data: $(form).serialize(),
+		// 				url: "php/process.php",
+		// 				success: function () {
+		// 					$('#contact :input').attr('disabled', 'disabled');
+		// 					$('#contact').fadeTo("slow", 1, function () {
+		// 						$(this).find(':input').attr('disabled', 'disabled');
+		// 						$(this).find('label').css('cursor', 'default');
+		// 						$('#success').fadeIn();
+		// 					});
+		// 				},
+		// 				error: function () {
+		// 					$('#contact').fadeTo("slow", 1, function () {
+		// 						$('#error').fadeIn();
+		// 					});
+		// 				}
+		// 			});
+		// 		}
+		// 	});
+		// });
 
 
 
