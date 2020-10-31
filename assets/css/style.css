@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1434,7 +1433,7 @@ h1{
 
 }
 :root {
-  --marquee-width: 80vw;
+  --marquee-width: 100vw;
   --marquee-height: 20vh;
   /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 5;
